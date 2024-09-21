@@ -5,9 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="Stylesheet" href="style.css">
+        <script src="script.js"></script>
         <title>Flowers</title>
     </head>
-    <body>
+    <body onclick="PlayAudio()">
+        <div class="overlay">
+            <div class="alerta">
+                <button class="close-btn" onclick="closeAlert()">Surprise🎉!!</button>
+            </div>
+        </div>
         <div class="flower">
             <div class="text-above">Una bella flor para otra bella flor</div>
             <div class="mid"></div>
@@ -23,7 +29,10 @@
             <div class="Petal3 p2"></div>
             <div class="Petal3 p3"></div>
             <div class="Petal3 p4"></div>
-            <div class="text-below">Te quiero mucho Bestie</div>
+            <div class="text-below">Con cada flor amarilla te envío un rayo de sol y todo mi cariño</div>
         </div>
+        <audio id="audio1" loop>
+            <source src="FloresAmarillas.mp3" type="audio/mpeg">
+        </audio>
     </body>
 </html>
